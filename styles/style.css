@@ -334,6 +334,8 @@
 .offer__picture {
     width: 250px;
     height: 250px;
+    object-position: center;
+    object-fit: cover;
 }
 
 .offer__picture.beach, .offer__picture.alpines {
@@ -480,9 +482,121 @@
 }
 
 .impression {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 1036px;
     background-color: #F3F5F4;
+}
+
+.impression__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 0;
+    font-family: Nunito Sans;
+}
+.impression_small_header {
+    color: #F2BE22;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.impression__header {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+}
+
+.impression__states {
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    grid-template-rows: repeat(2, 312px);
+    gap: 24px 20px;
+}
+
+.impression__state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #FDFDFD;
+}
+
+.state__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 280px;
+    width: 294px;
+}
+
+.state__text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    gap: 24px;
+}
+
+.state__header {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.state__paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.state__credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    width: 100%;
+}
+
+.state__date {
+    color: #F2BE22;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.state__read {
+    text-decoration: none;
+    color: #1A3E3E;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.state__picture {
+    width: 230px;
+    height: 280px;
+    border-radius: 6px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.impression__materials.button {
+    color: #FDFDFD;
+    width: 220px;
+    height: 52px;
+    background-color: #1A3E3E;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: .12em;
 }
 
 .report {
