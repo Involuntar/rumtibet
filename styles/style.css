@@ -587,6 +587,119 @@
     width: 580px;
 }
 
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A3E3E;
+    height: 587px;
+}
+
+.footer__subscriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -98px;
+    max-width: 1180px;
+    height: 196px;
+    border-radius: 6px;
+    background-color: #FDFDFD;
+    box-shadow: 0px 0px 15px 0px #18121E1F;
+    gap: 0 64px;
+    padding: 0 100px;
+}
+
+.footer_subscriptions_headers {
+    display: flex;
+    flex-direction: column;
+    gap: 8;
+    max-width: 380px;
+}
+
+.subscriptions_small_header {
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.subscriptions__header {
+    font-family: Nunito Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+}
+
+.subscriptions_small_header, .subscriptions__header {
+    text-align: left;
+}
+
+.footer_subscriptions_mailing {
+    max-width: 536px;
+}
+
+.subscriptions__email.text {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #18121E;
+}
+
+.subscriptions__email.input {
+    width: 248px;
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 4px;
+    background: #F3F5F4;
+    border: none;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 8px 0;
+}
+
+.subscribe.button {
+    padding: 0 24px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.012em;
+}
+
+.subscriptions__terms {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.subscriptions__terms.href {
+    color: #18121E;
+}
+
+.footer__copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18121E;
+    height: 66px;
+    width: 100%;
+}
+
+.footer__policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    width: 1180px;
+}
+
 @font-face {
     font-family: NEXT ART;
     src: url("../fonts/NEXT\ ART_Bold.otf");
