@@ -146,6 +146,7 @@
 
 .programm__search.button {
     background-color: #FFF;
+    color: #1A3E3E;
     border: none;
     border-radius: 4px;
     width: 213px;
@@ -156,6 +157,38 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: .12em;
+}
+
+.small__header {
+    color: #F2BE22;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main__header {
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    text-align: center;
+}
+
+.button {
+    width: fit-content;
+    height: 52px;
+    background-color: #1A3E3E;
+    border: none;
+    border-radius: 4px;
+    color: #FDFDFD;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.12em;
+    padding: 0 36px;
 }
 
 .about {
@@ -172,6 +205,10 @@
     width: 1180px;
     height: 526px;
     margin: 0 auto;
+}
+
+.about_small_header, .about__header {
+    text-align: left;
 }
 
 .about__pictures {
@@ -201,42 +238,12 @@
     width: 580px;
 }
 
-.about_small_header {
-    color: #F2BE22;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    line-height: 20px;
-    font-size: 24px;
-}
-
-.about__header {
-    font-family: Nunito Sans;
-    font-weight: 800;
-    line-height: 32px;
-    font-size: 38.4px;
-    margin-top: 8px;
-}
-
 .about__paragraph {
     font-family: Nunito Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     margin: 40px 0;
-}
-
-.about__programm.button {
-    width: 200px;
-    height: 52px;
-    background-color: #1A3E3E;
-    border: none;
-    border-radius: 4px;
-    color: #FDFDFD;
-    font-family: Nunito Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0.12em;
 }
 
 .offer {
@@ -255,6 +262,10 @@
     width: 1180px;
 }
 
+.offer_small_header, .offer__header {
+    text-align: left;
+}
+
 .offer__text {
     width: 580px;
     height: 591px;
@@ -264,19 +275,7 @@
 }
 
 .offer_small_header {
-    color: #F2BE22;
-    font-family: Nunito Sans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 20px;
     margin-bottom: 8px;
-}
-
-.offer__header {
-    font-family: Nunito Sans;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38.4px;
 }
 
 .offer__paragraph {
@@ -371,17 +370,7 @@
 }
 
 .popular_small_header {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 20px;
     margin-bottom: 8px;
-    color: #F2BE22;
-}
-
-.popular__header {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38.4px;
 }
 
 .popular__directions {
@@ -440,7 +429,7 @@
     height: 90px;
 }
 
-.popular_direction_description, .popular__rating.button {
+.popular_direction_description {
     color: #FDFDFD;
 }
 
@@ -469,18 +458,6 @@
     line-height: 24px;
 }
 
-.popular__rating.button {
-    width: 244px;
-    height: 52px;
-    background-color: #1A3E3E;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: .12em;
-}
-
 .impression {
     display: flex;
     justify-content: center;
@@ -497,18 +474,6 @@
     justify-content: center;
     gap: 50px 0;
     font-family: Nunito Sans;
-}
-.impression_small_header {
-    color: #F2BE22;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.impression__header {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38.4px;
 }
 
 .impression__states {
@@ -586,22 +551,40 @@
     object-fit: cover;
 }
 
-.impression__materials.button {
-    color: #FDFDFD;
-    width: 220px;
-    height: 52px;
-    background-color: #1A3E3E;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: .12em;
-}
-
 .report {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-height: 1006px;
+}
+
+.report__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito Sans;
+    gap: 50px 0;
+}
+
+.report__images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1180px;
+    gap: 20px;
+}
+
+.report__picture {
+    width: 280px;
+    height: 250px;
+    border-radius: 6px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.report__picture:nth-child(1), .report__picture:nth-child(5) {
+    width: 580px;
 }
 
 @font-face {
